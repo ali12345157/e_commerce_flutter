@@ -1,6 +1,8 @@
 import 'package:e_commerce_flutter/Splash-Screen.dart';
 import 'package:flutter/material.dart';
 
+import 'HomeScreen.dart';
+
 void main(){
 
 
@@ -19,7 +21,10 @@ class MyApp extends StatelessWidget{
     return MaterialApp(
 
       debugShowCheckedModeBanner: false,
-      routes: {SplashScreen.id: (context)=>SplashScreen(),},
+      routes: {SplashScreen.id: (context)=>SplashScreen(),
+        Homescreen.id:(context)=>Homescreen(),
+
+      },
       initialRoute:SplashScreen.id
     );
   }
