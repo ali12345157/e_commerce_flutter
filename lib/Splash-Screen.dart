@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:e_commerce_flutter/SignIn.dart';
 import 'package:flutter/material.dart';
 
 import 'HomeScreen.dart';
@@ -16,7 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
 
     Timer(Duration(seconds: 2), () {
-      Navigator.pushReplacementNamed(context,Homescreen.id);
+      Navigator.pushReplacementNamed(context,Signin.id);
     });
   }
 
